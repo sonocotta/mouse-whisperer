@@ -57,7 +57,7 @@ Please find hardware schematics in the [hardware](/hardware) folder
 
 ## Where to buy
 
-Order at [Tindie](https://www.tindie.com/products/sonocotta/)
+Order at [Tindie](https://www.tindie.com/products/sonocotta/mouse-whisperer/)
 
 ## Demo
 
