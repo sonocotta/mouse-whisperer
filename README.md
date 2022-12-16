@@ -61,6 +61,9 @@ Order at [Tindie](https://www.tindie.com/products/sonocotta/)
 
 ## Demo
 
+![DSC_0071.MOV](/images/DSC_0071.MOV.gif)
+![DSC_0073.MOV](/images/DSC_0073.MOV.gif)
+![DSC_0076.MOV](/images/DSC_0076.MOV.gif)
 
 ## Links
 
