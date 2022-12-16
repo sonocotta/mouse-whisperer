@@ -35,6 +35,10 @@ Provided code sample initialises board as USB mouse device and draws perfect cir
 
 ## How to use it
 
+Mouse Whisperer comes preloaded with software. Simply insert it into USB socket, no drivers needed. Touch the edge of the board to switch it off, touch again to sswitch it back on.
+
+If you wish to update software to your taste see information below.
+
 ### Using Platformio and included sample firmware
 
 Samples code in this repo provided as Platformio project, please follow the official Platformio [installation guide](https://platformio.org/install) first.
