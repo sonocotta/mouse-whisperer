@@ -32,4 +32,6 @@ jobs:
         pip install --upgrade platformio
     
     - name: Run PlatformIO
-      run: pio ci --board=digispark-compat --board=attiny85-stick --board=attiny85-candle-rgb
+      working-directory: ./firmware/attiny-mouse-whisperer
+      run: pio run
+      
