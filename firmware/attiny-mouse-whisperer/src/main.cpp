@@ -3,6 +3,7 @@
 #include "circle.h"
 const int RADIUS_FACTOR = 3;
 
+#ifdef LIGHT_WS2812_AVR
 #include <light_ws2812.h>
 #define BRT_FACTOR 3
 #define MAX_BRT ((0xFF >> BRT_FACTOR)-1)
@@ -16,6 +17,7 @@ cRGB leds[NUM_PIXELS];
 
 #include "effects/rainbowled.h"
 RainBowLed effect(BRT_FACTOR, NUM_PIXELS, leds);
+#endif
 
 void setup()
 {
@@ -35,6 +37,7 @@ uint32_t seq = 0;
 
 void update_visual()
 {
+  #ifdef LIGHT_WS2812_AVR
   if (enabled_state)
   {
     // uint8_t brightness = (abs(SIN(seq)) * MAX_BRT) >> 10;
@@ -53,6 +56,7 @@ void update_visual()
     }
     ws2812_setleds(leds, NUM_PIXELS);
   }
+  #endif
   
 }
 
