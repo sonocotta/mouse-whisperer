@@ -45,6 +45,10 @@ section at the end of this file).
 #define USB_CFG_IOPORTNAME      B
 #define USB_CFG_DMINUS_BIT      5
 #define USB_CFG_DPLUS_BIT       6
+#elif defined (__AVR_ATtiny1616__) || defined(__AVR_ATtiny1617__)
+#define USB_CFG_IOPORTNAME      B
+#define USB_CFG_DMINUS_BIT      3
+#define USB_CFG_DPLUS_BIT       4
 #else
 /*	ATtiny2313, ATmega8/48/88/168	*/
 #define USB_CFG_IOPORTNAME      D
@@ -375,7 +379,7 @@ section at the end of this file).
 /* #define USB_INTR_PENDING_BIT    INTF0 */
 /* #define USB_INTR_VECTOR         SIG_INTERRUPT0 */
 
- #if defined (__AVR_ATtiny45__) || defined (__AVR_ATtiny85__) 
+#if defined (__AVR_ATtiny45__) || defined (__AVR_ATtiny85__) 
 #define USB_INTR_CFG            PCMSK
 #define USB_INTR_CFG_SET        (1<<USB_CFG_DPLUS_BIT)
 #define USB_INTR_ENABLE_BIT     PCIE
@@ -394,5 +398,12 @@ section at the end of this file).
 #define USB_INTR_VECTOR         PCINT1_vect
 #endif
 
+#if defined (__AVR_ATtiny1616__) || defined(__AVR_ATtiny1617__)
+// #define USB_INTR_CFG            PCMSK
+// #define USB_INTR_CFG_SET        (1<<USB_CFG_DPLUS_BIT)
+// #define USB_INTR_ENABLE_BIT     PCIE
+// #define USB_INTR_PENDING_BIT    PCIF
+// #define USB_INTR_VECTOR         SIG_PIN_CHANGE
+#endif
 
 #endif /* __usbconfig_h_included__ */
