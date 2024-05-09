@@ -12,38 +12,38 @@ Mouse Whisperer is a small development kit that is based on Microchip [ATtiny85]
 
 There are many reasons why not, but also a few reasons why.
 
-- I'm sick and tired entering passwords each time I leave laptop for 2 minutes
+- I'm sick and tired of entering passwords each time I leave my laptop for 2 minutes
 - I don't want my screen to go dark whenever I'm focused on something and happen to not move the mouse for a minute or two
-- I want to be available for other Team members, even if I went for a cup of coffee
-- But mainly, if someone enforce stupid policies on my laptop and I cannot change them - I will workaround them
+- I want to be available for other Team members, even if I go for a cup of coffee
+- But mainly, if someone enforces stupid policies on my laptop and I cannot change them - I will work around them
 
 ## How
 
 Mouse Whisperer is based on the [Micronucleos](https://github.com/micronucleus/micronucleus) bootloader, which allows USB communication for both flashing and user code communication.
 
-Provided code sample initialises board as USB mouse device and draws perfect circles until switched off.
+Provided code sample initializes board as USB mouse device and draws perfect circles until switched off.
 
 ## Main features
 
 - [ATtiny85](https://www.microchip.com/en-us/product/ATTINY85) MCU
 - 8 KB Flash, 512B EEPROM, 512B SRAM
 - WS2812E RGB addressable LED for status indication
-- TTP223 based touch sensor for switching it ON and OFF
+- TTP223-based touch sensor for switching it ON and OFF
 - Sandwich PCB design to protect important electronics from cats and children
 
 ![image](https://user-images.githubusercontent.com/5459747/208096216-27483410-b548-404d-a4b2-dbdbd9e3f393.png)
 
 ## How to use it
 
-Mouse Whisperer comes preloaded with software. Simply insert it into USB socket, no drivers needed. Touch the edge of the board to switch it off, touch again to sswitch it back on.
+Mouse Whisperer comes preloaded with software. Simply insert it into the USB socket, no drivers are needed. Touch the edge of the board to switch it off, and touch it again to switch it back on.
 
-If you wish to update software to your taste see information below.
+If you wish to update the software to your taste see the information below.
 
 ### Using Platformio and included sample firmware
 
-Samples code in this repo provided as Platformio project, please follow the official Platformio [installation guide](https://platformio.org/install) first.
+Samples code in this repo are provided as a Platformio project, please follow the official Platformio [installation guide](https://platformio.org/install) first.
 
-When a project is built using `Platformio: Build` task and ready to be flashed, run `Platformio: Upload` task. You insert your board into USB after that and the flashing process will start automatically. When done, code starts execution immediately.
+When a project is built using the `Platformio: Build` task and ready to be flashed, run the `Platformio: Upload` task. You insert your board into the USB after that and the flashing process will start automatically. When done, the code starts execution immediately.
 
 ![image](https://user-images.githubusercontent.com/5459747/208096469-a39ed78d-982c-420f-80d3-c3b3fbc119e5.png)
 
@@ -57,7 +57,7 @@ Please find hardware schematics in the [hardware](/hardware) folder
 
 ## Where to buy
 
-Order at [Tindie](https://www.tindie.com/products/sonocotta/mouse-whisperer/)
+Order at [Tindie](https://www.tindie.com/products/sonocotta/mouse-whisperer/) and [Elecrow](https://www.elecrow.com/mouse-whisperer.html)
 
 ## Demo
 
